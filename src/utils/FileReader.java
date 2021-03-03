@@ -9,7 +9,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class FileReader {
-    public static List<String> read(String path) {
+
+    public static List<String> read() {
+        String path = "C:\\Users\\astar\\IdeaProjects\\ScriptiingCalculator\\data.txt";
         List<String> dataListFromFile = new ArrayList<>();
         try (BufferedReader reader = Files.newBufferedReader(Paths.get(path))) {
             dataListFromFile = reader.lines().collect(Collectors.toList());

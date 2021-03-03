@@ -11,7 +11,7 @@ public class ScriptParser {
         return res;
     }
 
-    public static String getArithmeticExpression(String str) {
+    private static String getArithmeticExpression(String str) {
         String[] tempArray = str.split(" ");
         String res = "";
         for (int i = 0; i < tempArray.length; i++) {
@@ -27,7 +27,7 @@ public class ScriptParser {
         return res;
     }
 
-    public static String getSingleDigitValues(String str) {
+    private static String getSingleDigitValues(String str) {
         String res = "";
         switch (str) {
             case "one":
@@ -84,7 +84,7 @@ public class ScriptParser {
         return res;
     }
 
-    public static String getScript(String str) {
+    private static String getScript(String str) {
         List<String> res = new ArrayList<>();
         String[] tempArray = str.split("");
         for (int i = 0; i < tempArray.length; i++) {
