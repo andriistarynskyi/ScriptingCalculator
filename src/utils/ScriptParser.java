@@ -11,7 +11,7 @@ public class ScriptParser {
         return res;
     }
 
-//    method will return string with numbers and arithmetic expressions ready for ScriptEngineManager
+//    method will return string with numbers and arithmetic operators ready for ScriptEngineManager
     private static String getArithmeticExpression(String str) {
         String[] tempArray = str.split(" ");
         String res = "";
